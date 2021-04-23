@@ -40,6 +40,13 @@ export default {
             }
             
             axios.post("http://localhost:5000/signup", newUser)
+            .then(res => {
+                console.log(res);
+                
+            }, err => {
+                console.log(err.response);
+                
+            })
             
         }
 
